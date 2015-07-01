@@ -14,11 +14,11 @@ gem 'bootstrap-sass', '~> 3.3.4.1'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'simple_form', '~> 3.1.0'
 
+
 group :development, :test do
-	gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-
+  gem 'sqlite3'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
