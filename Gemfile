@@ -13,7 +13,14 @@ gem 'devise', '~> 3.5.1'
 gem 'bootstrap-sass', '~> 3.3.4.1'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'simple_form', '~> 3.1.0'
-gem 'sqlite3'
+
+
+group :development do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
